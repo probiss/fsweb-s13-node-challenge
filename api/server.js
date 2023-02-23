@@ -1,5 +1,6 @@
 const express = require('express');
 const server = express();
+server.use(express.json());
 
 // Sunucunuzu yapılandırın
 // Eylem routerınızı /api/actions/actions-router.js içinde oluşturun
