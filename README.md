@@ -17,60 +17,60 @@
 Kodunuzla ilgili testler yapmak için kullanabileceğiniz bir _"test"_ betiği zaten var.
 Veritabanını orijinal durumuna sıfırlamanıza izin veren bir _"resetdb"_ komut dosyası mevcuttur.
 
-- [ ] API sunucusunu çalıştırmak için "node" kullanan _"start"_ adlı bir _npm betiği_ yazın.
-- [ ] API sunucusunu çalıştırmak için `nodemon` kullanan _"server"_ adlı bir _npm betiği_ yazın.
-- [ ] Üretimde kullanılmayacak bir geliştirme bağımlılığı olarak _nodemon_ yükleyin.
+- [X] API sunucusunu çalıştırmak için "node" kullanan _"start"_ adlı bir _npm betiği_ yazın.
+- [X] API sunucusunu çalıştırmak için `nodemon` kullanan _"server"_ adlı bir _npm betiği_ yazın.
+- [X] Üretimde kullanılmayacak bir geliştirme bağımlılığı olarak _nodemon_ yükleyin.
 
 ### Görev 2: Ortam Değişkenlerini Tüket
 
-- [ ] "process.env" değişkeninden bağlantı noktası numarasını getirin, "process.env.PORT" tanımsızsa "9000"e geri dönün **!!!**
+- [X] "process.env" değişkeninden bağlantı noktası numarasını getirin, "process.env.PORT" tanımsızsa "9000"e geri dönün **!!!**
 
 ### Görev 3: Uç Noktalar Oluşturun
 
 `api/projects/projects-router.js` içinde aşağıdakileri uygulayın:
 
-- [ ] `[GET] /api/projects`
+- [x] `[GET] /api/projects`
   - Yanıt gövdesinde bir projexts dizisi döndürür.
   - Proje yoksa boş bir dizi ile yanıt verir.
-- [ ] `[GET] /api/projects/:id`
+- [x] `[GET] /api/projects/:id`
   - Yanıtın gövdesi olarak belirtilen "id" ile bir proje döndürür.
   - Belirtilen id'ye sahip bir proje yoksa, 404 durum koduyla yanıt verir..
-- [ ] `[POST] /api/projects`
+- [x] `[POST] /api/projects`
   - Yanıtın gövdesi olarak yeni oluşturulan projeyi döndürür.
   - İstek gövdesinde gerekli alanlardan herhangi biri eksikse, 400 durum koduyla yanıt verir.
-- [ ] `[PUT] /api/projects/:id`
+- [x] `[PUT] /api/projects/:id`
   - Yanıtın gövdesi olarak güncellenen projeyi döndürür.
   - Belirtilen id'ye sahip bir proje yoksa, 404 durum koduyla yanıt verir.
   - İstek gövdesinde gerekli alanlardan herhangi biri eksikse, 400 durum koduyla yanıt verir.
-- [ ] `[DELETE] /api/projects/:id`
+- [x] `[DELETE] /api/projects/:id`
   - Yanıt gövdesi döndürmez.
   - Belirtilen id'ye sahip bir proje yoksa, 404 durum koduyla yanıt verir..
-- [ ] `[GET] /api/projects/:id/actions`
+- [x] `[GET] /api/projects/:id/actions`
   - Belirtilen "id" ile bir projeye ait bir dizi eylem (boş olabilir) döndürür.
   - Belirtilen id'ye sahip bir proje yoksa, 404 durum koduyla yanıt verir.
 
 `api/actions/actions-router.js` içinde  _actions_ CRUD işlemleri yapan uç noktalar oluşurun:
 
-- [ ] `[GET] /api/actions`
+- [x] `[GET] /api/actions`
   - Yanıtın gövdesi olarak bir dizi eylem (action) (veya boş bir dizi) döndürür.
-- [ ] `[GET] /api/actions/:id`
+- [x] `[GET] /api/actions/:id`
   - Yanıtın gövdesi olarak verilen "id" ile bir action döndürür.
   - Verilen 'id' ile herhangi bir eylem yoksa, 404 durum koduyla yanıt verir.
-- [ ] `[POST] /api/actions`
+- [x] `[POST] /api/actions`
   - Yeni oluşturulan eylemi yanıtın gövdesi olarak döndürür.
   - İstek gövdesinde gerekli alanlardan herhangi biri eksikse, 400 durum koduyla yanıt verir.
   - Bir eylem eklerken sağlanan "project_id"nin mevcut bir "projeye" ait olduğundan emin olun.
-- [ ] `[PUT] /api/actions/:id`
+- [x] `[PUT] /api/actions/:id`
   - Güncellenen eylemi yanıtın gövdesi olarak döndürür.
   - Verilen 'id' ile herhangi bir işlem yoksa, 404 durum koduyla yanıt verir.
   - İstek gövdesinde gerekli alanlardan herhangi biri eksikse, 400 durum koduyla yanıt verir.
-- [ ] `[DELETE] /api/actions/:id`
+- [x] `[DELETE] /api/actions/:id`
   - Yanıt gövdesi döndürmez.
   - Verilen 'id' ile herhangi bir işlem yoksa, 404 durum koduyla yanıt verir.
 
 ### Görev 4: Ara yazılım işlevleri oluşturun
 
-- [ ] Bu API için en az iki ara yazılım işlevi yazın ve bunları kodunuzun uygun yerlerinde kullanın.
+- [x] Bu API için en az iki ara yazılım işlevi yazın ve bunları kodunuzun uygun yerlerinde kullanın.
 
 ### Veritabanı Şemalarına İlişkin Bilgiler
 
