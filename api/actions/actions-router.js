@@ -20,8 +20,8 @@ router.get("/", (req, res, next) => {
         );
 });
 
-router.get("/:id", actionCheck, (req, res, next) => {
-    res.status(200).json(req.response);
+router.get("/:id", actionCheck, (req, res) => {
+    res.status(200).json(req.action);
 });
 
 router.post("/", actionValidation, (req, res, next) => {
